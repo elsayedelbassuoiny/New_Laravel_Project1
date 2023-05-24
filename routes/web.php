@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\SubjectController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DeparmentController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +18,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+
+Route::get('/adminwelcome', function () {
+    return view('adminwelcome');
 });
+
+Route::get('/', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'login']);
+
+
+
+Route::get('/login/adding_department',  [DeparmentController::class,'index']);
+Route::post('/create',  [DeparmentController::class,'dataInsert']);
+
+
+
+Route::resource('/subjects',SubjectController::class);
+Route::resource('/departments',DeparmentController::class);
