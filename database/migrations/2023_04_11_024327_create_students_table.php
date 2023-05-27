@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('level');
             $table->json('assign_subjects');
-            $table->integer('acadimic_number')->nullable(true);
+            // $table->integer('acadimic_number')->nullable(true)->autoIncrement()->startingValue(200);
         });
     }
 

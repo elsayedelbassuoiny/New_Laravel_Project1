@@ -10,8 +10,11 @@
     <div>{{$subject->department->name}} ({{$subject->department->code}})</div>
     {{-- <div>{{$department->name}}</div> --}}
 
-    {{-- @foreach (json_decode($subject->$files) as $file)
+    {{-- @foreach (json_decode($subject->files) as $file)
         {{$file}}
+        <br>
     @endforeach --}}
+
+    <a href="/subjects/{{$subject->id}}/files/create">Upload Files</a>
 </body>
 </html>

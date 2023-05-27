@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
     {
 
         $this -> call([
-            StudentSeeder::class,
-            DepartmentSeeder::class,
-            SubjectSeeder::class,
-            DoctorSeeder::class
+            // StudentSeeder::class,
+            // DepartmentSeeder::class,
+            // SubjectSeeder::class,
+            // DoctorSeeder::class
         ]);
 
         // User::create([

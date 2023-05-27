@@ -72,33 +72,33 @@
                 </div>
               </div>
           </a>
-          <a href="">
+          <a href="/attendences">
             <div class="card" style="width: 18rem; height: 16rem;">
                 <img src="{{asset('images/attend.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h4 class="card-text">Adding Subject</h4>
+                  <h4 class="card-text">Attendences</h4>
                 </div>
               </div>
           </a>
 
         </section>
         <section class="adminControl2">
-            <a href="">
-              <div class="card" style="width: 18rem;">
-                  <img src="{{asset('images/account.jpg')}}" class="card-img-top" alt="...">
-                  <div class="card-body">
-
+            <a href="/students">
+                <div class="card" style="width: 18rem; height: 16rem;">
+                    <img src="{{asset('images/attend.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-text">Adding Student</h4>
+                    </div>
                   </div>
-                </div>
-            </a>
-            <a href="">
-              <div class="card" style="width: 18rem;">
-                  <img src="{{asset('images/img.jpg')}}" class="card-img-top" alt="...">
-                  <div class="card-body">
-
+              </a>
+              <a href="/doctors">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{asset('images/account.jpg')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-body">Adding Doctor</h4>
+                    </div>
                   </div>
-                </div>
-            </a>
+              </a>
 
 
           </section>

@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
 
-    const ACTIVE_DOCTOR_KEY = 'activeDoctor';
     const ACTIVE_STUDENT_KEY = 'activeStudent';
 
     private $admin =["admin@fci.com ", "admin"];
@@ -36,7 +35,6 @@ class LoginController extends Controller
         }elseif($request -> usertype=='doctor'){
             $login = Doctor::where('email', $request->email)->first();
             if( $login != null && $login->password == $request->password){
-                session([LoginController::ACTIVE_DOCTOR_KEY => serialize($login)]);
                 return view('doctorwelcome');
             }
         }elseif($request -> usertype=='admin') {
